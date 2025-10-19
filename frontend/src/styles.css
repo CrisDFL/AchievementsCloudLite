@@ -1,0 +1,44 @@
+:root{
+  --bg:#0f1724;
+  --card:#111827;
+  --muted:#9ca3af;
+  --accent:#4f46e5;
+  --ok:#16a34a;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+
+body{
+  background:linear-gradient(180deg,var(--bg),#071126);
+  color:#e6eef8;
+  padding:18px;
+}
+
+/* Layout */
+.app{max-width:980px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.header h1{margin:0;font-size:20px}
+.controls{display:flex;gap:8px;align-items:center}
+.controls label{display:flex;flex-direction:column;font-size:12px;color:var(--muted)}
+.controls input{padding:6px 8px;border-radius:6px;border:1px solid #222;background:#0b1220;color:#e6eef8}
+.controls button{padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+
+/* Summary */
+.summary{display:flex;gap:12px;padding:12px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:12px}
+.note{color:var(--muted)}
+
+/* List */
+.list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.item{display:flex;justify-content:space-between;padding:12px;border-radius:8px;background:rgba(255,255,255,0.02);align-items:center}
+.item.locked{opacity:0.8}
+.left{flex:1}
+.title{font-weight:600}
+.desc{font-size:13px;color:var(--muted);margin-top:6px}
+.right{text-align:right;min-width:120px}
+.status{font-size:20px}
+.date{font-size:12px;color:var(--muted);margin-top:6px}
+
+/* Footer */
+.footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+.error{padding:10px;background:#3f1b1b;border-radius:8px;color:#ffd6d6}
